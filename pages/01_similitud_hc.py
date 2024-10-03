@@ -21,6 +21,12 @@ def calculate_cosine_similarity(text1, text2):
 def main():
     st.title("Similitud de Historias Clínicas (HC)")
 
+    with st.expander('Sobre esta app'):
+        st.markdown('**¿Qué puede hacer esta aplicación??**')
+        st.info('Esta aplicación muestra la similitud de HC utilizando diversas metricas como en este caso la distancia del coseno')
+        st.markdown('**How to use the app?**')
+        st.warning('Para interactuar con la aplicación, 1. Ingrese un ID del paciente')
+
     # Sidebar con entrada de usuario
     patient_id = st.sidebar.text_input("Ingrese el ID del paciente:", "")
     submit_button = st.sidebar.button("Buscar")
